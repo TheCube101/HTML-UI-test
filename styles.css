@@ -1,0 +1,101 @@
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 27%, rgba(0,34,97,1) 100%);
+    justify-content: center;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    left: 50%;
+}
+
+.text {
+    background: linear-gradient(45deg, #00dbde, #fc00ff);
+    font-family: Poppins;
+    font-size: 40px;
+    text-transform: uppercase;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    justify-content: center;
+    margin-right: 20px;
+    padding: 15px;
+}
+
+/* vv Neon button hover vv */
+.neon-button1 {
+    padding: 25px 30px;
+    margin: 40px 0;
+    margin-left: 20px;
+    color: #ff0000;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 2px;
+    margin-right: 50px;
+    border-radius: 5px;
+}
+
+.neon-button1:hover {
+    background: linear-gradient(20deg, #3e0019, #ff0000);
+    color: #050801;
+    box-shadow: 0 0 10px #ff0000,
+                0 0 30px #ff0000,
+                0 0 100px #ff0000,
+                0 0 200px  #ff0066b5;
+    -webkit-box-reflect:below 1px linear-gradient(transparent, rgba(168, 0, 0, 0.991));
+    cursor: pointer;
+}
+
+
+.neon-button2 {
+    padding: 25px 30px;
+    margin: 40px 0;
+    margin-left: 20px;
+    color: #52ff00;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 2px;
+    margin-right: 50px;
+    border-radius: 5px;
+}
+
+.neon-button2:hover {
+    background: linear-gradient(20deg, rgba(0,241,255,1) 0%, rgba(82,255,0,1));
+    color: #050801;
+    box-shadow: 0 0 10px #00ffae,
+                0 0 30px #52ff00,
+                0 0 100px #52ff00,
+                0 0 200px  #00bbff9c;
+    /* -webkit-box-reflect:below 1px linear-gradient(transparent, #0005); This adds a reflextion below the gradients/glow */
+    cursor: pointer;
+}
+
+
+.neon-button3 {
+    padding: 25px 30px;
+    margin: 40px 0;
+    margin-left: 20px;
+    color: #ffb800;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 2px;
+    margin-right: 50px;
+    border-radius: 5px;
+}
+
+.neon-button3:hover {
+    background: linear-gradient(20deg, rgba(255,119,0,1) 0%, rgba(255,184,0,1));
+    color: #050801;
+    box-shadow: 0 0 10px #ffb800,
+                0 0 30px #ffb800,
+                0 0 100px #ffb800,
+                0 0 200px  #ffb800;
+    /* -webkit-box-reflect:below 1px linear-gradient(transparent, #0005); This adds a reflextion below the gradients/glow */
+    cursor: pointer;
+}
