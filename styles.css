@@ -13,7 +13,8 @@ body {
     left: 50%;
 }
 
-.text {
+
+.text {      
     background: linear-gradient(45deg, #00dbde, #fc00ff);
     font-family: Poppins;
     font-size: 40px;
@@ -46,7 +47,7 @@ body {
                 0 0 30px #ff0000,
                 0 0 100px #ff0000,
                 0 0 200px  #ff0066b5;
-    -webkit-box-reflect:below 1px linear-gradient(transparent, rgba(168, 0, 0, 0.991));
+    -webkit-box-reflect:below 1px linear-gradient(transparent, rgba(168, 0, 0, 0.267));
     cursor: pointer;
 }
 
@@ -99,3 +100,47 @@ body {
     /* -webkit-box-reflect:below 1px linear-gradient(transparent, #0005); This adds a reflextion below the gradients/glow */
     cursor: pointer;
 }
+/* ^^ Neon button hover ^^ */
+
+.slidesContainer {
+    width: 100.45%;
+    height: 100vh;
+    justify-content: center;
+    overflow-y: scroll;
+    scroll-snap-type: y proximity; 
+    scroll-behavior: smooth;
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+}
+
+.slides {
+    width: 120%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+
+    overflow: hidden;
+}
+.slide1 {
+    width: 100.45%;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(0deg, rgba(91, 3, 97, 0.529) 0%, rgba(0, 34, 97, 0) 100%);
+}
+
+.slide2 {
+    width: 100.45%;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(0deg, rgba(97, 3, 33, 0.529) 0%, rgba(91, 3, 97, 0.529) 100%);
+}
+
+.slide3 {
+    width: 100.45%;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(0deg, rgba(3, 55, 97, 0.529) 0%, rgba(97, 3, 33, 0.529) 100%);
+}
+/* vv 
