@@ -143,4 +143,60 @@ body {
     justify-content: center;
     background: linear-gradient(0deg, rgba(3, 55, 97, 0.529) 0%, rgba(97, 3, 33, 0.529) 100%);
 }
-/* vv 
+
+
+.orb1 {
+    animation:spin 4s linear infinite;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    margin-top: 140px;
+    border-radius: 50%;
+    box-shadow:
+    inset 0 0 50px #fff,
+    inset 20px 0 60px violet,
+    inset -20px 0 60px blue,
+    inset 20px 0 300px violet,
+    inset -20px 0 300px blue,
+    0 0 50px #fff,
+    -10px 0 60px violet,
+    10px 0 60px blue;
+}
+
+.orb2 {
+    animation:spin 4s linear infinite;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    margin-top: 140px;
+    border-radius: 50%;
+    box-shadow:
+    inset 0 0 50px #fff,
+    inset 20px 0 60px #610321,
+    inset -20px 0 60px #9800b6,
+    inset 20px 0 300px #610321,
+    inset -20px 0 300px #9800b6,
+    0 0 50px #fff,
+    -10px 0 60px #610321,
+    10px 0 60px #9800b6;
+}
+
+.orb3 {
+    animation:spin 4s linear infinite;
+    width: 450px;
+    height: 450px;
+    margin: auto;
+    margin-top: 140px;
+    border-radius: 50%;
+    box-shadow:
+    inset 0 0 50px #a67cff,
+    inset 20px 0 60px #033761a2,
+    inset -20px 0 60px #610321a2,
+    inset 20px 0 300px #033761a2,
+    inset -20px 0 300px #610321a2,
+    0 0 50px #a67cff,
+    -10px 0 60px #033761a2,
+    10px 0 60px #610321a2;
+}
+
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
