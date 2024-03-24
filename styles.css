@@ -92,7 +92,10 @@ body {
     transition: 0.5s;
     letter-spacing: 2px;
     margin-right: 50px;
-    border-radius: 5px;
+    border-width: 1px;
+    border-radius: 30px;
+    /* Add border properties */
+    border-style: solid;
 }
 
 .neon-button3:hover {
@@ -104,8 +107,31 @@ body {
                 0 0 200px  #ffb800;
     /* -webkit-box-reflect:below 1px linear-gradient(transparent, #0005); This adds a reflextion below the gradients/glow */
     cursor: pointer;
+    border-color: #ffb800;
 }
 /* ^^ Neon button hover ^^ */
+
+.buttonstyle1{
+    padding: 25px 30px;
+    margin: 40px 0;
+    margin-left: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #00dbde, #fc00ff);
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 0;
+    transition: 0.3s;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.buttonstyle1:hover {
+    padding: 25px 35px;
+    cursor: pointer;
+}
 
 .slidesContainer {
     width: 100.45%;

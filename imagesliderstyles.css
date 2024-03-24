@@ -22,7 +22,7 @@ body {
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     box-shadow: 0 1.5rem 3rem -0.75rem hasla(0, 0%, 0%, 0.25);
-    border-radius: 0.5rem;
+    border-radius: 3rem;
     scrollbar-width: none; 
     -ms-overflow-style: none;
 }
