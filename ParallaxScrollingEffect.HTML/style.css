@@ -98,3 +98,18 @@
     font-size: 1.5rem;
     color: #fff;
 }
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%); /* chamge the number to what ever so that it fits the best "100% comes from the right not the left and oposite" */
+    transition: all 1s;
+
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    overflow-x: hidden;
+}

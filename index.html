@@ -5,28 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Parallax Scrolling Website</title>
     <link rel="stylesheet" href="ParallaxScrollingEffect.HTML/style.css" />
+    <script defer src="app.js"></script>
   </head>
   <body>
     <header id="header">
-      <a href="#" class="logo">Nature</a>
+      <a href="#" class="logo hidden">Nature</a>
       <ul>
-        <li><a href="#" class="active" onclick="window.open('InteractiveUI.html');">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Donate</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#" class="active hidden" onclick="window.open('InteractiveUI.html');">Home</a></li>
+        <li><a href="#" class="hidden">About</a></li>
+        <li><a href="#" class="hidden">Donate</a></li>
+        <li><a href="#" class="hidden">Contact</a></li>
       </ul>
     </header>
     <section id="scene">
       <h2 id="text">Nature</h2>
-      <img src="ParallaxScrollingEffect.HTML/Images/mainvertx1.png" id="img1" />
-      <img src="ParallaxScrollingEffect.HTML/Images/mainvertx2.png" id="img2" />
-      <img src="ParallaxScrollingEffect.HTML/Images/mainvertx3.png" id="img3" />
-      <img src="ParallaxScrollingEffect.HTML/Images/mainvertx4.png" id="img4" />
-      <img src="ParallaxScrollingEffect.HTML/Images/mainvertx5.png" id="img5" />
+      <img src="ParallaxScrollingEffect.HTML/Images/mainvertx1.png" id="img1" loading="lazy"/>
+      <img src="ParallaxScrollingEffect.HTML/Images/mainvertx2.png" id="img2" loading="lazy"/>
+      <img src="ParallaxScrollingEffect.HTML/Images/mainvertx3.png" id="img3" loading="lazy"/>
+      <img src="ParallaxScrollingEffect.HTML/Images/mainvertx4.png" id="img4" loading="lazy"/>
+      <img src="ParallaxScrollingEffect.HTML/Images/mainvertx5.png" id="img5" loading="lazy"/>
     </section>
     <div class="sec">
-      <h2>Parallax Scrolling Effrcts</h2>
-      <p>
+      <h2 class="hidden">Parallax Scrolling Effrcts</h2>
+      <p  class="hidden">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
         molestiae est ipsam quos cum quod? Eum asperiores ipsam explicabo porro
         tenetur voluptate, reiciendis magnam amet sed minima assumenda
@@ -36,7 +37,7 @@
         asperiores pariatur voluptatum tempore est veritatis, exercitationem
         tempora quae excepturi. Porro excepturi impedit, labore, modi saepe ut
         ea possimus repellendus rerum explicabo quam harum omnis doloremque
-        eaque quo quia sit sed nemo. </br></br>br>corporis? Repellendus necessitatibus ex aut,
+        eaque quo quia sit sed nemo. </br></br>corporis? Repellendus necessitatibus ex aut,
         repudiandae sapiente maxime consequatur veniam architecto eveniet enim
         obcaecati commodi voluptas adipisci sint cumque quo, temporibus quae
         asperiores praesentium rerum eaque sunt ratione quas. Reiciendis nostrum
@@ -72,10 +73,10 @@
       window.addEventListener('scroll', function(){
         let value = window.scrollY;
         text.style.marginTop = value * -2+'px'
-        img1.style.top = value * 0.75+'px'
-        img2.style.top = value * 0.5+'px'
-        img3.style.top = value * 0.25+'px'
-        img4.style.top = value * 0.2+'px'
+        img1.style.top = value * 0.75 +'px'/* change the top to any direction if thats needed*/
+        img2.style.top = value * 0.5 +'px'
+        img3.style.top = value * 0.25 +'px'
+        img4.style.top = value * 0.15 +'px'
       })
     </script>
   </body>
