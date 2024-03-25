@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+  }
+  
+  body {
+    background-image: url(images/grid.png);
+    margin: 0;
+  }
+  
+  #header2 {
+    position: fixed; /* Changed to fixed for header visibility during scroll */
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0); /* Added background color for header visibility */
+  }
+  
+  #header2 .logo2 {
+    color: #dca100;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 4em;
+  }
+  
+  #header2 ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  #header2 ul li {
+    list-style: none; 
+  }
+  
+  #header2 ul li a{
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #dca100;
+    border-radius: 20px;
+    transition: 0.5s;
+  }
+  
+  #header2 ul li a:hover,
+  #header2 ul li a.active{
+    background: #dca100;
+    color: white;
+  }
+  
+  #fixedContainer {
+    position: absolute; /* Changed to absolute */
+    top: 200px; /* Adjust as needed based on header height */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50rem;
+  }
+  
+  #scene3 {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .scene-img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 100px;
+    object-fit: cover;
+    border-radius: 50px;
+  }
